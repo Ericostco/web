@@ -1,0 +1,23 @@
+.box {
+    width: 200px;
+    height: 200px;
+}
+.blackbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: black;
+    align-items: center;
+    width: 1000px;
+    height: 1000px;
+}
+.greenbox {
+    background-color: aqua;
+}
+.purplebox {
+    background-color: rgb(115, 0, 255);
+
+}
+.redbox {
+    background-color: rgb(255, 0, 85);
+}
