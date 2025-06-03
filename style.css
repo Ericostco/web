@@ -1,23 +1,155 @@
-.box {
-    width: 200px;
-    height: 200px;
+@font-face {
+  font-family: 'Chiayi City Font';
+  src: url(./font/ChiayiCity.ttf);
 }
-.blackbox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    background-color: black;
-    align-items: center;
-    width: 1000px;
-    height: 1000px;
-}
-.greenbox {
-    background-color: aqua;
-}
-.purplebox {
-    background-color: rgb(115, 0, 255);
 
+body {
+  font-family: 'Chiayi City Font';
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
-.redbox {
-    background-color: rgb(255, 0, 85);
+
+h1,
+h2 {
+  font-weight: 900;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+nav {
+  background-color: #444;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #555;
+  transition-delay: 1s;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0%;
+}
+
+main section {
+  background-color: antiquewhite;
+  padding: 1rem;
+  margin: 1rem;
+  flex: 1;
+}
+
+.left,
+.right {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.left {
+  align-items: flex-end;
+  box-sizing: border-box;
+  padding-right: 3rem;
+}
+
+section.right {
+  text-align: left;
+  padding-left: 3rem;
+}
+
+main section.left img {
+  display: block;
+  width: 20rem;
+  height: auto;
+  border-radius: 5%;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.contact-list img {
+  width: 1em;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+
+footer {
+  text-align: center;
+  padding: 2.5rem 0;
+  background-color: #333;
+  color: #fff;
+}
+
+svg {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.bi-youtube {
+  color: red;
+}
+
+.bi-linkedin {
+  color: #0077b5;
+}
+
+@media (max-width: 872px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.left {
+    align-items: center;
+    padding: 0%;
+  }
+
+  section.right {
+    align-items: left;
+    padding: 0%;
+  }
+
+  main section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
 }
