@@ -1,0 +1,133 @@
+@import "./header.scss";
+@import "./footer.scss";
+
+@font-face {
+    font-family: 'Chiayi City Font';
+    src: url(./font/ChiayiCity.ttf);
+}
+
+body {
+    font-family: 'Chiayi City Font';
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    font-weight: 900;
+}
+
+nav {
+    background-color: #444;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        margin: 0;
+    }
+
+    a {
+        display: block;
+        padding: 1rem;
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            background-color: #555;
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3%;
+
+    .left,
+    .right {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+        margin: 1rem;
+        flex: 1;
+        box-sizing: border-box;
+    }
+
+    .left {
+        align-items: flex-end;
+
+        img {
+            display: block;
+            width: 20em;
+            height: auto;
+            border-radius: 3%;
+        }
+    }
+
+    .right {
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+
+            li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 0.5rem;
+
+                svg {
+                    margin-right: 0.5rem;
+                    vertical-align: middle;
+                }
+
+                svg.bi-youtube {
+                    color: red;
+                }
+
+                svg.bi-linkedin {
+                    color: #0077b5;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 872px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+
+        section {
+            padding: 0%;
+
+            img {
+                width: 50%;
+                height: auto;
+            }
+        }
+
+        section.left {
+            align-items: center;
+        }
+
+        section.right {
+            align-items: left;
+        }
+    }
+}
