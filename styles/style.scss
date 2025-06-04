@@ -18,12 +18,18 @@ h2 {
     font-weight: 900;
 }
 
+@mixin flexbox($justify: center, $align: center, $direction: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
 nav {
     background-color: #444;
 
     ul {
-        display: flex;
-        justify-content: center;
+        @include flexbox(center, left, row);
         list-style: none;
         margin: 0;
         padding: 0;
