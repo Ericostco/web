@@ -1,0 +1,22 @@
+@import "./variable.scss";
+@import "./flexbox.scss";
+
+nav {
+    background-color: $nav-background-color;
+
+    ul {
+        @include flexbox(center, center, row);
+        list-style: none;
+    }
+
+    a {
+        display: block;
+        padding: 1rem;
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            background-color: $nav-a-hover-color;
+        }
+    }
+}

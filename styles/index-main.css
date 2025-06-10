@@ -1,0 +1,63 @@
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 3%;
+  padding: 1rem;
+}
+
+.left,
+.right {
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.left {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-end;
+  border: #0077b5 solid 1px;
+}
+.left img {
+  display: block;
+  width: 800px;
+  height: 100%;
+  border-radius: 3%;
+}
+
+.right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  border: #1eb500 solid 1px;
+}
+.right .contact-list {
+  list-style: none;
+  padding: 1rem 0 0 0;
+  line-height: 1.8rem;
+}
+.right .contact-list li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 0.5rem;
+}
+.right .contact-list li svg {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+.right .contact-list li svg.bi-youtube {
+  color: red;
+}
+.right .contact-list li svg.bi-linkedin {
+  color: #0077b5;
+}/*# sourceMappingURL=index-main.css.map */

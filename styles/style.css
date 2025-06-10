@@ -1,21 +1,103 @@
 header {
   background-color: #333;
-  color: #fff;
+  color: white;
   padding: 2rem 0;
   text-align: center;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 2rem 0;
-  text-align: center;
+nav {
+  background-color: #444;
+  color: white;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  margin: 0;
+}
+nav a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+}
+nav a:hover {
+  background-color: #555;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 3%;
+}
+main .left,
+main .right {
+  padding: 1rem;
+  margin: 1rem;
+  flex: 1;
+  box-sizing: border-box;
+}
+main .left {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-end;
+  border: #0077b5 solid 1px;
+}
+main .left img {
+  display: block;
+  width: 20px;
+  height: 100%;
+  border-radius: 3%;
+}
+main .right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  border: #1eb500 solid 1px;
+}
+main .right .contact-list {
+  list-style: none;
+  padding: 1rem 0 0 0;
+  line-height: 1.8rem;
+}
+main .right .contact-list li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 0.5rem;
+}
+main .right .contact-list li svg {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+main .right .contact-list li svg.bi-youtube {
+  color: red;
+}
+main .right .contact-list li svg.bi-linkedin {
+  color: #0077b5;
 }
 
 footer {
   text-align: center;
   padding: 2.5rem 0;
-  background-color: #333;
+  background-color: #444;
   color: #fff;
 }
 
@@ -30,84 +112,15 @@ body {
   padding: 0;
 }
 
-h1,
-h2 {
+h1 {
   font-weight: 900;
 }
 
-nav {
-  background-color: #444;
-}
-nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: left;
-  flex-direction: row;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-nav li {
-  margin: 0;
-}
-nav a {
-  display: block;
-  padding: 1rem;
-  color: #fff;
-  text-decoration: none;
-}
-nav a:hover {
-  background-color: #555;
-}
-
-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 3%;
-}
-main .left,
-main .right {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  padding: 1rem;
-  margin: 1rem;
-  flex: 1;
-  box-sizing: border-box;
-}
-main .left {
-  align-items: flex-end;
-}
-main .left img {
-  display: block;
-  width: 20em;
-  height: auto;
-  border-radius: 3%;
-}
-main .right {
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-main .right .contact-list {
-  list-style: none;
-  padding: 0;
-}
-main .right .contact-list li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.5rem;
-}
-main .right .contact-list li svg {
-  margin-right: 0.5rem;
-  vertical-align: middle;
-}
-main .right .contact-list li svg.bi-youtube {
-  color: red;
-}
-main .right .contact-list li svg.bi-linkedin {
-  color: #0077b5;
+h2 {
+  font-size: 1.2rem;
+  text-align: justify;
+  padding: 1rem 15rem 1rem 0;
+  line-height: 2rem;
 }
 
 @media (max-width: 872px) {

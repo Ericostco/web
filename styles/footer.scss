@@ -1,8 +1,8 @@
-@import "./header.scss";
+@import './variable.scss';
 
 footer {
     text-align: center;
     padding: 2.5rem 0;
-    background-color: $header-background-color;
-    color: #fff;
+    background-color: $footer-background-color;
+    color: white;
 }
