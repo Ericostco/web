@@ -1,0 +1,59 @@
+@import "./flexbox.scss";
+@import "./variable.scss";
+
+.right {
+    @include flexbox(center, stretch, row);
+    box-sizing: border-box;
+    margin: 1rem 1rem;
+
+    .img {
+        flex: 1 1 300px;
+        border: #0077b5;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        border-radius: 3%;
+    }
+
+    .about-self {
+        flex: 1 1 400px;
+        @include flexbox(center, stretch, column);
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        line-height: $line-height;
+        text-align: justify;
+    }
+
+    .self-intro,
+    .contact-info {
+        flex: 1 1 auto;
+    }
+
+    .contact-list {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    svg {
+        margin-right: 0.5rem;
+        vertical-align: middle;
+    }
+
+    svg.bi-youtube {
+        color: red;
+    }
+
+    svg.bi-linkedin {
+        color: #0077b5;
+    }
+}
