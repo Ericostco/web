@@ -1,4 +1,4 @@
-main {
+.main-area {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -36,7 +36,16 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+<<<<<<< Updated upstream:styles/index-main.css
   border: #1eb500 solid 1px;
+=======
+}
+.right h2 {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: justify;
+  margin-bottom: 2rem;
+>>>>>>> Stashed changes:styles/main.css
 }
 .right .contact-list {
   list-style: none;
@@ -60,4 +69,18 @@ main {
 }
 .right .contact-list li svg.bi-linkedin {
   color: #0077b5;
+<<<<<<< Updated upstream:styles/index-main.css
 }/*# sourceMappingURL=index-main.css.map */
+=======
+}
+
+section.progress-bar-area {
+  background-color: rgb(199, 241, 255);
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+section.progress-bar-area .skill-progress-area {
+  width: 80%;
+}/*# sourceMappingURL=main.css.map */
+>>>>>>> Stashed changes:styles/main.css
