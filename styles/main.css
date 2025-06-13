@@ -44,6 +44,8 @@
 .right .contact-list {
   list-style: none;
   padding: 0;
+  word-break: break-all;
+  overflow-wrap: break-word;
 }
 .right .contact-list li {
   margin-bottom: 0.5rem;
@@ -66,5 +68,5 @@ section.progress-bar-area {
   padding: 20px 0;
 }
 section.progress-bar-area .skill-progress-area {
-  width: 80%;
+  width: 60%;
 }/*# sourceMappingURL=main.css.map */

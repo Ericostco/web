@@ -37,6 +37,8 @@
     .contact-list {
         list-style: none;
         padding: 0;
+        word-break: break-all; // 長字串自動換行
+        overflow-wrap: break-word;
 
         li {
             margin-bottom: 0.5rem;
@@ -64,7 +66,6 @@ section.progress-bar-area {
     padding: 20px 0;
 
     .skill-progress-area {
-        width: 80%;
-
+        width: 60%;
     }
 }
