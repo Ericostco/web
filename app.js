@@ -6,3 +6,5 @@ window.addEventListener("scroll", () => {
     else
         nav.style.boxShadow = "0 10px 6px -6px #888";
 });
+
+console.log("Welcome to the page!");

@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Chiayi City Font";
-  src: url(./font/ChiayiCity.ttf);
+  src: url(../font/ChiayiCity.ttf);
 }
 body {
   font-family: "Chiayi City Font";
