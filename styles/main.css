@@ -10,7 +10,7 @@
 .left,
 .right {
   box-sizing: border-box;
-  margin: 1rem;
+  padding: 1rem;
   flex-basis: 500px;
 }
 
@@ -62,11 +62,21 @@
 }
 
 section.progress-bar-area {
-  background-color: rgb(199, 241, 255);
+  background-color: rgba(223, 247, 255, 0.528);
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  padding: 1rem 0;
 }
 section.progress-bar-area .skill-progress-area {
-  width: 60%;
+  width: 950px;
+  padding: 0 1rem;
+}
+
+@media (max-width: 999px) {
+  .left img {
+    width: 100%;
+  }
+  .skill-progress-area {
+    flex-basis: 500px;
+  }
 }/*# sourceMappingURL=main.css.map */
