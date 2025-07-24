@@ -1,9 +1,27 @@
-@import "./flexbox.scss";
-@import "./variable.scss";
+// Abstracts (工具類)
+@use "./abstracts/variable" as *;
+@use "./abstracts/flexbox";
+
+// Base (基礎樣式)
+@use "./base/style";
+@use "./base/bubble";
+
+// Components (元件)
+@use "./components/timeline";
+
+// Layouts (佈局)
+@use "./layouts/header";
+@use "./layouts/nav";
+@use "./layouts/footer";
 
 .main-area {
+<<<<<<< Updated upstream
     @include flexbox(center, center, row);
     min-height: 65vh;
+=======
+  @include flexbox.flexbox(center, center, row);
+  min-height: 65vh;
+>>>>>>> Stashed changes
 }
 
 .left,
@@ -14,7 +32,11 @@
 }
 
 .left {
+<<<<<<< Updated upstream
     @include flexbox(center, center, row);
+=======
+  @include flexbox.flexbox(center, center, row);
+>>>>>>> Stashed changes
 
     img {
         display: block;
@@ -25,7 +47,11 @@
 }
 
 .right {
+<<<<<<< Updated upstream
     @include flexbox(center, flex-start, column);
+=======
+  @include flexbox.flexbox(center, flex-start, column);
+>>>>>>> Stashed changes
 
     h2 {
         font-size: 1.2rem;
