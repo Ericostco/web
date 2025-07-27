@@ -1,7 +1,10 @@
+@use "variables" as *;
+
 @font-face {
   font-family: "Chiayi City Font";
   src: url(../font/ChiayiCity.ttf);
 }
+
 body {
   font-family: "Chiayi City Font";
   margin: 0;
@@ -9,6 +12,6 @@ body {
 }
 
 h1 {
-  font-weight: 900;
+  font-weight: $h1-font-weight;
   margin-bottom: 1rem;
-}/*# sourceMappingURL=style.css.map */
+}

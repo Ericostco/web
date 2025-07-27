@@ -1,0 +1,80 @@
+@use "flexbox" as *;
+@use "variables" as *;
+
+.main-area {
+  @include flexbox(center, center, row);
+  min-height: 65vh;
+}
+
+.left,
+.right {
+  box-sizing: border-box;
+  padding: 1rem;
+  flex-basis: 500px;
+}
+
+.left {
+  @include flexbox(center, center, row);
+
+  img {
+    display: block;
+    width: 70%;
+    height: auto;
+    border-radius: 3%;
+  }
+}
+
+.right {
+  @include flexbox(center, flex-start, column);
+
+  h2 {
+    font-size: 1.2rem;
+    line-height: $line-height;
+    text-align: justify;
+    margin-bottom: 2rem;
+  }
+
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    word-break: break-all;
+    overflow-wrap: break-word;
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    svg {
+      margin-right: 0.5rem;
+      vertical-align: middle;
+    }
+
+    svg.bi-youtube {
+      color: red;
+    }
+
+    svg.bi-linkedin {
+      color: #0077b5;
+    }
+  }
+}
+section.progress-bar-area {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+
+  .skill-progress-area {
+    width: 950px;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 999px) {
+  .left img {
+    width: 100%;
+  }
+
+  .skill-progress-area {
+    flex-basis: 500px;
+  }
+}
