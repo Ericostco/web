@@ -2,28 +2,6 @@
 @use "../abstracts/flexbox" as flexbox;
 
 nav {
-<<<<<<< Updated upstream:styles/nav.scss
-    background-color: $nav-background-color;
-
-    ul {
-        @include flexbox(center, center, row);
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    a {
-        display: block;
-        padding: 1rem;
-        text-decoration: none;
-        color: white;
-
-        &:hover {
-            background-color: $nav-a-hover-color;
-            text-decoration: none;
-            color: white;
-        }
-=======
   background-color: variable.$nav-background-color;
   position: sticky;
   top: 0;
@@ -46,12 +24,11 @@ nav {
       background-color: variable.$nav-a-hover-color;
       text-decoration: none;
       color: white;
->>>>>>> Stashed changes:styles/layouts/_nav.scss
     }
+  }
 }
-
 @media (max-width: 700px) {
-    nav ul {
-        flex-direction: column;
-    }
+  nav ul {
+    flex-direction: column;
+  }
 }

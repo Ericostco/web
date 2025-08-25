@@ -34,9 +34,6 @@ nav a:hover {
 }
 
 @media (max-width: 700px) {
-  nav {
-    position: static;
-  }
   nav ul {
     flex-direction: column;
   }
@@ -74,108 +71,108 @@ footer {
   }
 }
 .x1 {
-  animation: animateBubble 17s linear infinite, sideWays 3s ease-in-out infinite alternate;
-  left: 89.9051270331%;
-  top: 46.4463594185%;
-  transform: scale(0.9);
-}
-
-.x2 {
-  animation: animateBubble 23s linear infinite, sideWays 3s ease-in-out infinite alternate;
-  left: 50.6086986159%;
-  top: 53.8275099507%;
-  transform: scale(0.8);
-}
-
-.x3 {
-  animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
-  left: 14.5476532932%;
-  top: 89.1090064294%;
-  transform: scale(0.9);
-}
-
-.x4 {
-  animation: animateBubble 27s linear infinite, sideWays 4s ease-in-out infinite alternate;
-  left: 34.8403022576%;
-  top: 5.76366884%;
-  transform: scale(0.9);
-}
-
-.x5 {
-  animation: animateBubble 23s linear infinite, sideWays 3s ease-in-out infinite alternate;
-  left: 16.7328015863%;
-  top: 71.8240479786%;
+  animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  left: 79.6844345289%;
+  top: 100.242709143%;
   transform: scale(0.3);
 }
 
-.x6 {
-  animation: animateBubble 17s linear infinite, sideWays 4s ease-in-out infinite alternate;
-  left: 12.9829410869%;
-  top: 75.4746603558%;
+.x2 {
+  animation: animateBubble 21s linear infinite, sideWays 3s ease-in-out infinite alternate;
+  left: 23.1070924314%;
+  top: 89.1072273441%;
+  transform: scale(0.2);
+}
+
+.x3 {
+  animation: animateBubble 22s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  left: 49.4523136278%;
+  top: 21.633160437%;
+  transform: scale(0.4);
+}
+
+.x4 {
+  animation: animateBubble 23s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  left: 80.038103121%;
+  top: 49.910729481%;
+  transform: scale(0.6);
+}
+
+.x5 {
+  animation: animateBubble 24s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  left: 83.7791879389%;
+  top: 93.9116597056%;
   transform: scale(0.5);
 }
 
+.x6 {
+  animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  left: 23.6013322867%;
+  top: 22.532213284%;
+  transform: scale(0.9);
+}
+
 .x7 {
-  animation: animateBubble 18s linear infinite, sideWays 4s ease-in-out infinite alternate;
-  left: 17.8832735761%;
-  top: 53.4826649637%;
-  transform: scale(0.7);
+  animation: animateBubble 19s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  left: 89.0058887986%;
+  top: 17.7811326132%;
+  transform: scale(0.9);
 }
 
 .x8 {
-  animation: animateBubble 17s linear infinite, sideWays 3s ease-in-out infinite alternate;
-  left: 61.5241955945%;
-  top: 51.2348431259%;
-  transform: scale(0.8);
+  animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+  left: 88.7880661406%;
+  top: 29.4408392839%;
+  transform: scale(0.3);
 }
 
 .x9 {
-  animation: animateBubble 28s linear infinite, sideWays 4s ease-in-out infinite alternate;
-  left: 90.632065701%;
-  top: 10.1692852074%;
+  animation: animateBubble 26s linear infinite, sideWays 3s ease-in-out infinite alternate;
+  left: 5.3342817244%;
+  top: 55.1141134562%;
   transform: scale(0.7);
 }
 
 .x10 {
-  animation: animateBubble 23s linear infinite, sideWays 3s ease-in-out infinite alternate;
-  left: 59.5874511931%;
-  top: 57.5975957501%;
-  transform: scale(0.8);
+  animation: animateBubble 28s linear infinite, sideWays 3s ease-in-out infinite alternate;
+  left: 12.4373533454%;
+  top: 77.5055378958%;
+  transform: scale(0.6);
 }
 
 .x11 {
-  animation: animateBubble 16s linear infinite, sideWays 4s ease-in-out infinite alternate;
-  left: 51.1202387573%;
-  top: 45.8792236934%;
-  transform: scale(0.5);
+  animation: animateBubble 30s linear infinite, sideWays 3s ease-in-out infinite alternate;
+  left: 25.1390054526%;
+  top: 4.7622511229%;
+  transform: scale(0.8);
 }
 
 .x12 {
-  animation: animateBubble 25s linear infinite, sideWays 4s ease-in-out infinite alternate;
-  left: 89.5406202225%;
-  top: 100.9741893173%;
+  animation: animateBubble 17s linear infinite, sideWays 3s ease-in-out infinite alternate;
+  left: 48.5845256318%;
+  top: 95.5706427963%;
   transform: scale(0.8);
 }
 
 .x13 {
   animation: animateBubble 21s linear infinite, sideWays 3s ease-in-out infinite alternate;
-  left: 83.1705284557%;
-  top: 82.0940872013%;
-  transform: scale(0.3);
+  left: 46.9406522378%;
+  top: 66.9926271059%;
+  transform: scale(0.8);
 }
 
 .x14 {
-  animation: animateBubble 28s linear infinite, sideWays 4s ease-in-out infinite alternate;
-  left: 96.0778804749%;
-  top: 25.8731405613%;
+  animation: animateBubble 23s linear infinite, sideWays 4s ease-in-out infinite alternate;
+  left: 6.1507754935%;
+  top: 38.7411810831%;
   transform: scale(0.6);
 }
 
 .x15 {
-  animation: animateBubble 16s linear infinite, sideWays 4s ease-in-out infinite alternate;
-  left: 38.3705214453%;
-  top: 56.7749512666%;
-  transform: scale(0.5);
+  animation: animateBubble 26s linear infinite, sideWays 3s ease-in-out infinite alternate;
+  left: 55.1990914271%;
+  top: 73.1905263785%;
+  transform: scale(0.2);
 }
 
 .bubble {
@@ -195,6 +192,55 @@ footer {
   left: 10px;
   position: absolute;
   width: 180px;
+}
+
+@font-face {
+  font-family: "Chiayi City Font";
+  src: url(../font/ChiayiCity.ttf);
+}
+body {
+  font-family: "Chiayi City Font";
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+
+ul.timeline:before {
+  content: " ";
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+ul.timeline > li:before {
+  content: " ";
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #22c0e8;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
 }
 
 .main-area {
@@ -277,52 +323,4 @@ section.progress-bar-area .skill-progress-area {
   .skill-progress-area {
     flex-basis: 500px;
   }
-}
-@font-face {
-  font-family: "Chiayi City Font";
-  src: url(../font/ChiayiCity.ttf);
-}
-body {
-  font-family: "Chiayi City Font";
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-  font-weight: 900;
-  margin-bottom: 1rem;
-}
-
-ul.timeline {
-  list-style-type: none;
-  position: relative;
-}
-
-ul.timeline:before {
-  content: " ";
-  background: #d4d9df;
-  display: inline-block;
-  position: absolute;
-  left: 29px;
-  width: 2px;
-  height: 100%;
-  z-index: 400;
-}
-
-ul.timeline > li {
-  margin: 20px 0;
-  padding-left: 20px;
-}
-
-ul.timeline > li:before {
-  content: " ";
-  background: white;
-  display: inline-block;
-  position: absolute;
-  border-radius: 50%;
-  border: 3px solid #22c0e8;
-  left: 20px;
-  width: 20px;
-  height: 20px;
-  z-index: 400;
 }/*# sourceMappingURL=main.css.map */

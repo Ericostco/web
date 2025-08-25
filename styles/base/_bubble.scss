@@ -1,110 +1,44 @@
+@use "sass:math";
+
 #background-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
   bottom: 0;
   left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
   z-index: -1;
 }
 
 @keyframes animateBubble {
   0% {
-    margin-top: 1000px;
+    margin-top: 100vh;
   }
 
   100% {
-    margin-top: -100%;
+    margin-top: -100vh;
   }
 }
 
 @keyframes sideWays {
   0% {
-    margin-left: 0px;
+    margin-left: 0vw;
   }
 
   100% {
-    margin-left: 100px;
+    margin-left: 10vw;
   }
 }
 
-.x1 {
-  animation: animateBubble 15s linear infinite,
-    sideWays 2s ease-in-out infinite alternate;
-  left: -5%;
-  top: 5%;
-  transform: scale(0.6);
-}
-
-.x2 {
-  animation: animateBubble 20s linear infinite,
-    sideWays 4s ease-in-out infinite alternate;
-  left: 5%;
-  top: 80%;
-  transform: scale(0.4);
-}
-
-.x3 {
-  animation: animateBubble 28s linear infinite,
-    sideWays 2s ease-in-out infinite alternate;
-  left: 10%;
-  top: 40%;
-  transform: scale(0.7);
-}
-
-.x4 {
-  animation: animateBubble 22s linear infinite,
-    sideWays 3s ease-in-out infinite alternate;
-  left: 20%;
-  top: 0;
-  transform: scale(0.3);
-}
-
-.x5 {
-  animation: animateBubble 29s linear infinite,
-    sideWays 4s ease-in-out infinite alternate;
-  left: 30%;
-  top: 50%;
-  transform: scale(0.5);
-}
-
-.x6 {
-  animation: animateBubble 21s linear infinite,
-    sideWays 2s ease-in-out infinite alternate;
-  left: 50%;
-  top: 0;
-  transform: scale(0.8);
-}
-
-.x7 {
-  animation: animateBubble 20s linear infinite,
-    sideWays 2s ease-in-out infinite alternate;
-  left: 65%;
-  top: 70%;
-  transform: scale(0.4);
-}
-
-.x8 {
-  animation: animateBubble 22s linear infinite,
-    sideWays 3s ease-in-out infinite alternate;
-  left: 80%;
-  top: 10%;
-  transform: scale(0.3);
-}
-
-.x9 {
-  animation: animateBubble 29s linear infinite,
-    sideWays 4s ease-in-out infinite alternate;
-  left: 90%;
-  top: 50%;
-  transform: scale(0.6);
-}
-
-.x10 {
-  animation: animateBubble 26s linear infinite,
-    sideWays 2s ease-in-out infinite alternate;
-  left: 80%;
-  top: 80%;
-  transform: scale(0.3);
+@for $i from 1 through 15 {
+  .x#{$i} {
+    $animDuration: math.floor(math.random(15)) + 15;
+    $sideDuration: math.floor(math.random(2)) + 2;
+    animation: animateBubble #{$animDuration}s linear infinite,
+      sideWays #{$sideDuration}s ease-in-out infinite alternate;
+    left: math.percentage(math.random() + 0.01);
+    top: math.percentage(math.random() + 0.01);
+    transform: scale(math.div(math.random(8), 10) + 0.1);
+  }
 }
 
 .bubble {
@@ -114,61 +48,53 @@
   height: 200px;
   width: 200px;
   position: absolute;
-}
 
-.bubble:after {
-  background: -moz-radial-gradient(
-    center,
-    ellipse cover,
-    rgba(255, 255, 255, 0.5) 0%,
-    rgba(255, 255, 255, 0) 70%
-  );
-  /* FF3.6+ */
-  background: -webkit-gradient(
-    radial,
-    center center,
-    0px,
-    center center,
-    100%,
-    color-stop(0%, rgba(255, 255, 255, 0.5)),
-    color-stop(70%, rgba(255, 255, 255, 0))
-  );
-  /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(
-    center,
-    ellipse cover,
-    rgba(255, 255, 255, 0.5) 0%,
-    rgba(255, 255, 255, 0) 70%
-  );
-  /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(
-    center,
-    ellipse cover,
-    rgba(255, 255, 255, 0.5) 0%,
-    rgba(255, 255, 255, 0) 70%
-  );
-  /* Opera 12+ */
-  background: -ms-radial-gradient(
-    center,
-    ellipse cover,
-    rgba(255, 255, 255, 0.5) 0%,
-    rgba(255, 255, 255, 0) 70%
-  );
-  /* IE10+ */
-  background: radial-gradient(
-    ellipse at center,
-    rgba(255, 255, 255, 0.5) 0%,
-    rgba(255, 255, 255, 0) 70%
-  );
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff', endColorstr='#00ffffff', GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */
-
-  border-radius: 50%;
-  box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
-  content: "";
-  height: 180px;
-  left: 10px;
-  position: absolute;
-  width: 180px;
+  &:after {
+    background: -moz-radial-gradient(
+      center,
+      ellipse cover,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    background: -webkit-gradient(
+      radial,
+      center center,
+      0px,
+      center center,
+      100%,
+      color-stop(0%, rgba(255, 255, 255, 0.5)),
+      color-stop(70%, rgba(255, 255, 255, 0))
+    );
+    background: -webkit-radial-gradient(
+      center,
+      ellipse cover,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    background: -o-radial-gradient(
+      center,
+      ellipse cover,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    background: -ms-radial-gradient(
+      center,
+      ellipse cover,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    background: radial-gradient(
+      ellipse at center,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80ffffff', endColorstr='#00ffffff', GradientType=1);
+    border-radius: 50%;
+    box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
+    content: "";
+    height: 180px;
+    left: 10px;
+    position: absolute;
+    width: 180px;
+  }
 }

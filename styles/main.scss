@@ -1,7 +1,7 @@
-@use "header";
-@use "nav";
-@use "footer";
-@use "bubble";
-@use "content";
-@use "style";
-@use "timeline";
+@use "./layouts/header";
+@use "./layouts/nav";
+@use "./layouts/footer";
+@use "./base/bubble";
+@use "./base/style";
+@use "./components/timeline";
+@use "./components/content";

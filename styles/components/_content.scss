@@ -1,5 +1,5 @@
-@use "flexbox" as *;
-@use "variables" as *;
+@use "../abstracts/flexbox" as *;
+@use "../abstracts/variable" as *;
 
 .main-area {
   @include flexbox(center, center, row);
